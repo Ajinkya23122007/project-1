@@ -14,12 +14,22 @@ while chances != 0:
         print("you won!")
         print("thankyou")
         break
+    elif guess == num+1:
+        print("high")
+        chances -=1
+        print("reaming chances are ",chances) 
     elif guess > num:
         print("too high")    
         chances -=1
+        print("reaming chances are ",chances) 
+    elif guess == num-1:
+        print("low")  
+        chances -=1
+        print("reaming chances are ",chances)  
     elif guess < num:
         print("too low")
         chances -=1    
+        print("reaming chances are ",chances) 
         print()
 
 else:
