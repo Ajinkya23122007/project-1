@@ -13,4 +13,13 @@ while chances != 0:
     if guess == num:
         print("you won!")
         print("thankyou")
+        break
+    elif guess > num:
+        print("too high")    
+        chances -=1
+    elif guess < num:
+        print("too low")
+        chnace -=1    
 
+else:
+    print("you losse")
