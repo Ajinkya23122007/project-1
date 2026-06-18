@@ -19,7 +19,9 @@ while chances != 0:
         chances -=1
     elif guess < num:
         print("too low")
-        chnace -=1    
+        chances -=1    
+        print()
 
 else:
-    print("you losse")
+    print("you losse!!")
+    print("the number was",num)
