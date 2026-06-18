@@ -1,0 +1,27 @@
+import random
+words = ["apple", "banana", "cherry", "date", "elderberry"]
+word = random.choice(words)
+jumble = ''.join(random.sample(word, len(word)))
+chances = 3
+print("~~~"*20)
+print("~~~~~~~wlcome to jumbled words game~~~~~~~~")
+print("~~~"*20)
+
+chances = 3
+
+while chances != 0:
+    print("the word is ",jumble)
+    guess=input("enter yours guessed word ").lower()
+    if guess == word:
+        print("correct guess")
+        print("you won!")
+        break
+    else:
+        chances-=1
+        print("incorrect guess")
+        print("reaming chances are ",chances)
+
+else:
+    print("your chances are over")
+    print("you lose")
+    print("the correct word is ",word)
